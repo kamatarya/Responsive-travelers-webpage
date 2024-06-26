@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traveler website</title>
+  
+  <link rel="stylesheet" type="text/css" href="styles2.css">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/> 
+</head>
+<body>
+
+    <section class="header">
+        <nav>
+         <a href=""><img src="logo.png" class="logo2"></a>
+         <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+         <ul>
+         <li><a href="">Home</a></li>
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="">Package<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+          <li><a href="">Goa</a></li>
+          <li><a href="">Kashmir</a></li>
+          <li><a href="">Rajasthan</a></li>
+          <li><a href="">Himachal</a></li>
+          </ul>
+         </li>
+        <li><a href="">Destination</a></li>
+          <li><a href="">About Us</a></li>
+         </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      </header>
+
+    <!--Home section-->
+        <div class="home-text">
+            <h1>Wanderes Unite</h1>
+            <p>At Wanderes Unite, we believe that traveling is not just about visiting new places, but about creating unforgettable experiences. Whether you're a seasoned explorer or embarking on your first journey, our mission is to inspire and guide you every step of the way.Founded in 2000, Wanderes Unite has grown from a passion project into a trusted resource for travelers worldwide.</p>
+        </div>
+    </section>
+ 
+    <h1>Our Team</h1>
+    <!--Our Team-->
+    <div class="con">
+        <div class="card">
+            <img src="dummy.jpg" alt="Starry Night" class="card-image">
+            <h3 class="card-title">Paul</h3>
+            <p class="card-text">Founder,CEO</p>
+            
+        </div>
+        <div class="card">
+            <img src="dummy1.png" alt="Misty Mornings" class="card-image">
+            <h3 class="card-title">Jack</h3>
+            <p class="card-text">Jack is a seasoned professional with two decades of extensive experience in the travel industry.His expertise spans various roles, from tour guiding and itinerary planning to destination management and customer relations</p>
+            
+        </div>
+        <div class="card">
+            <h3 class="card-title">About Us</h3>
+            <p class="card-text">Since 2000, Wanderes Unite has specialized in creating authentic cultural experiences and immersive adventures.<br> With over 25 years of nurturing strong partnerships with local guides globally, they offer a diverse portfolio including luxury cruises in the Mediterranean and eco-tours in the Amazon rainforest.<br> Achieving a remarkable client retention rate of over 90%, Wanderes Unite has been recognized as the "Best Adventure Travel Company" by Travel & Leisure for three consecutive years.<br> They are committed to sustainable tourism practices and actively engage in supporting local communities.<br>As attested by Emily and Mark Thompson, travelers can expect meticulously planned journeys that exceed expectations, whether exploring Bali or visiting Angkor Wat.</p>
+            
+        </div>
+    </div>
+    
+    <h1>Our Packages</h1>
+    <!--Our Package-->
+    <div class="con">
+    <div class="card" style="width: 18rem;">
+        <img src="kashmir2.jpg" class="image-cap">
+        <div class="card-body">
+          <h5 class="card-title">Kashmir</h5>
+          <a href="#" class="btn btn-primary">Get a Quote</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="goa.jpg" class="image-cap">
+        <div class="card-body">
+          <h5 class="card-title">Goa</h5>
+          <a href="#" class="btn btn-primary">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Contact Us form-->
+    <div id="con" class="section">
+        <form class="contact-form" action="#" method="POST">
+          <h2>Contact Us</h2>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      
+
+    <!--Footer-->
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <img src="logo.png" class="logo1">
+                   
+                        
+                </div>
+                <div class="list">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Terms and Conditions </a></li>
+                        <li><a href="">privacy Policy</a></li>
+                        <li><a href="">help</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="">Email</a></li>
+                        <li><a href="">+91(1234567890) </a></li>
+                        <li><a href="">Porvorim</a></li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Connect</h4>
+                    <div class="social">
+                    <ul>
+                       <li><a href="">Facebook</a></li>
+                       <li><a href="">Instagram</a></li>
+                       <li><a href="">Twitter</a></li>
+                       <li><a href="">Linkedin</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-100%";
+        }
+    </script> 
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
